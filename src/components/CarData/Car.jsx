@@ -3,9 +3,9 @@ import cars from "../../data/cars.json";
 import "./car.css";
 import ReactPaginate from "react-paginate";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import { CarInput } from "../input/CarInput";
 import CarCard from "../carCard/CarCard";
 import { useNavigate, useParams } from "react-router-dom";
+import { CarInput } from "../input/CarInput"; // Import the CarInput component
 
 const Car = () => {
   const [item, setItem] = useState("");
@@ -14,14 +14,8 @@ const Car = () => {
   const usersPerPage = 6;
 
   const { page } = useParams();
-
   const pageNumber = parseInt(page);
-
-  console.log(pageNumber);
-
   const navigate = useNavigate();
-
-  console.log(pageNumber);
 
   const filteredCar = carData.slice(
     pageNumber * usersPerPage,
@@ -30,7 +24,6 @@ const Car = () => {
   const pageCount = 10;
 
   const changePage = ({ selected }) => {
-    // console.log(selected, "sell");
     navigate(`/${selected}`);
   };
 
@@ -50,9 +43,10 @@ const Car = () => {
     <>
       <div className="car_card">
         <div className="search_section">
+          {/* Use the CarInput component for input and button */}
           <CarInput
-            onChangeHandler={onChangeHandler}
             value={item}
+            onChangeHandler={onChangeHandler}
             onClick={searchItem}
           />
         </div>
@@ -82,4 +76,5 @@ const Car = () => {
     </>
   );
 };
+
 export default Car;

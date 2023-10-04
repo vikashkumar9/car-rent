@@ -8,11 +8,11 @@ export const CarInput = (props) => {
         <input
           type="text"
           value={props.value}
-          onChange={props.onchangehandler}
+          onChange={props.onChangeHandler}
           placeholder="search"
           className="input_fiels"
         ></input>
-        <button onClick={props.onClick} className="search_button ">
+        <button onClick={props.onClick} className="search_button">
           <BsSearch />
         </button>{" "}
       </div>
