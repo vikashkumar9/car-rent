@@ -1,0 +1,113 @@
+.car_card {
+  margin: 100px;
+  border-radius: 10px;
+  background-color: #e8f4ff;
+}
+.car {
+  border: 1px solid white;
+  /* width: 300px; */
+
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f1f7fd;
+}
+.car-image {
+  border: 0px solid rgb(28, 24, 24);
+  border-radius: 20px;
+}
+.car-name-year,
+.car_price {
+  display: flex;
+  justify-content: space-between;
+}
+.car_year {
+  border: 1px dashed black;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.capacity,
+.fuel,
+.milaze,
+.auto_manual {
+  display: flex;
+  align-items: center;
+}
+.capacity_fuel,
+.mil_type {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.car_icons {
+  color: rgb(0, 234, 255);
+  margin-right: 10px;
+}
+.rent_button {
+  padding: 7px 10px;
+  background-color: rgb(78, 240, 240);
+  border-radius: 10px;
+  border-style: none;
+}
+.like_button {
+  background-color: rgb(245, 238, 238);
+
+  margin-right: 10px;
+  color: rgb(78, 240, 240);
+  padding: 7px 10px;
+  border-radius: 20px;
+  border-style: none;
+}
+.car_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+
+  padding: 20px;
+}
+.field {
+  display: flex;
+}
+.search_section,
+.pages_adjustment {
+  background-color: #dbebf9;
+  /* height: 50px; */
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.search_button {
+  background-color: white;
+  border-style: none;
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 20px;
+}
+.input_fiels {
+  margin-left: 20px;
+  border-style: none;
+  padding: 20px;
+  border-radius: 20px 0px 0px 20px;
+  font-size: large;
+}
+.pages_adjustment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagging {
+  display: flex;
+  list-style: none;
+}
+
+.pagging a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+
+  background-color: white;
+  cursor: pointer;
+}
